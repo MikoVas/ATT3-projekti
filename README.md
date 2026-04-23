@@ -20,23 +20,7 @@ Keskeinen arvo käyttäjälle on parempi ajanhallinta sekä vähentynyt riski un
 - Kiireellisten tehtävien korostus (deadline 0–3 päivän sisällä).
 - REST-tyyliset API-reitit JSON-tietovarastolla.
 
-## Projektin rakenne
 
-```text
-student-task-prioritizer/
-├─ app.py
-├─ requirements.txt
-├─ README.md
-├─ templates/
-│  └─ index.html
-├─ static/
-│  ├─ style.css
-│  └─ script.js
-└─ data/
-   └─ tasks.json
-```
-
----
 
 ## Sovelluksen käynnistysohjeet (kokonaisuutena)
 

@@ -1,24 +1,39 @@
 # Student Task Prioritization Tool (HTML + JavaScript)
 
-Tämä projekti on nyt toteutettu **kokonaan JavaScript/HTML/CSS-pohjaisena** ilman Pythonia tai Flaskia.
+Tämä projekti on toteutettu JavaScript/HTML/CSS-pohjaisena ilman backendiä.
 
-## Arvolupaus
+## Uutta tässä versiossa (v1.3.0)
 
-Sovelluksen arvolupaus on tarjota opiskelijalle selkeä ja helppokäyttöinen työkalu opiskelutehtävien hallintaan.
-
-Käyttäjä pystyy näkemään kaikki tehtävänsä yhdessä näkymässä sekä tunnistamaan nopeasti, mitkä tehtävät ovat kiireisimpiä. Sovellus auttaa priorisoimaan tehtäviä deadlinen ja tärkeyden perusteella.
-
-Keskeinen arvo käyttäjälle on parempi ajanhallinta sekä vähentynyt riski unohtaa tehtäviä.
+- Sivun reunassa on kielenvaihtonappi (FI/EN).
+- Versionumero näkyy käyttöliittymässä (ylhäällä ja oikeassa alakulmassa).
+- Värikäs käyttöliittymä (gradient-tausta, värilliset kortit, prioriteettivärit).
+- Tilastonäkymä + grafiikat:
+  - Priority Distribution
+  - Status Split
+  - Course Distribution
+- Valmiit tehtävät omassa erillisessä luettelossa: **Completed Tasks (Archive)**.
 
 ## Ominaisuudet
 
 - Lisää uusi tehtävä (title, description, course, deadline, priority)
-- Näytä kaikki tehtävät listassa
+- Näytä aktiiviset tehtävät omassa listassaan
+- Näytä valmiit tehtävät erillisessä arkistossa
 - Automaattinen lajittelu deadlinen ja prioriteetin mukaan
 - Merkitse tehtävä valmiiksi
 - Poista tehtävä
 - Korosta kiireelliset tehtävät (deadline 0–3 päivän sisällä)
-- Tallennus selaimen `localStorage`:en
+- Tallenna data selaimen `localStorage`:en
+
+## Käynnistys
+
+1. Avaa projektikansio.
+2. Avaa `index.html` selaimessa.
+3. Sovellus toimii heti ilman asennuksia.
+
+## Tallennus
+
+- Tehtävät: `student_task_prioritizer_tasks_v1`
+- Kielivalinta: `student_task_prioritizer_lang`
 
 ## Projektirakenne
 
@@ -32,18 +47,3 @@ student-task-prioritizer/
    ├─ script.js
    └─ style.css
 ```
-
-## Käynnistysohjeet (kokonaisuutena)
-
-1. Avaa projektikansio.
-2. Tuplaklikkaa `index.html` **tai** avaa se selaimessa.
-3. Sovellus on heti käytettävissä.
-
-## Tallennus
-
-- Tehtävät tallennetaan selaimen `localStorage`:en avaimella `student_task_prioritizer_tasks_v1`.
-- Jos localStorage on tyhjä, sovellus lisää automaattisesti esimerkkitehtäviä ensimmäisellä käynnistyskerralla.
-
-## Huomio
-
-Tiedosto `data/tasks.json` on mukana esimerkkidatana, mutta varsinainen käyttöversio tallentaa tehtävät selaimen localStorageen.

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Task Prioritization Tool</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <button id="language-toggle" class="language-toggle" type="button">EN</button>
+
+    <main class="container">
+      <header class="top-header">
+        <div>
+          <h1 id="app-title"></h1>
+          <p id="value-proposition" class="value-proposition"></p>
+        </div>
+        <span id="version-inline" class="version-inline"></span>
+      </header>
+
+      <section class="card colorful-card">
+        <h2 id="add-task-title"></h2>
+        <form id="task-form">
+          <div class="grid">
+            <label><span id="label-title"></span><input type="text" id="title" required /></label>
+            <label><span id="label-course"></span><input type="text" id="course" required /></label>
+            <label class="full-width"><span id="label-description"></span><textarea id="description" rows="3" required></textarea></label>
+            <label><span id="label-deadline"></span><input type="date" id="deadline" required /></label>
+            <label>
+              <span id="label-priority"></span>
+              <select id="priority" required>
+                <option value="low" id="opt-low"></option>
+                <option value="medium" id="opt-medium" selected></option>
+                <option value="high" id="opt-high"></option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" id="add-task-button"></button>
+        </form>
+        <p id="form-message" class="message" aria-live="polite"></p>
+      </section>
+
+      <section class="card stats-card">
+        <h2 id="stats-title"></h2>
+        <div id="stats" class="stats-grid"></div>
+        <div class="charts-grid">
+          <article class="mini-chart-card">
+            <h3 id="priority-distribution-title"></h3>
+            <div id="priority-chart"></div>
+          </article>
+          <article class="mini-chart-card">
+            <h3 id="status-split-title"></h3>
+            <div id="status-chart"></div>
+          </article>
+          <article class="mini-chart-card full-chart">
+            <h3 id="course-distribution-title"></h3>
+            <div id="course-chart"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 id="active-tasks-title"></h2>
+        <div id="active-tasks" class="tasks"></div>
+      </section>
+
+      <section class="card completed-section">
+        <h2 id="completed-tasks-title"></h2>
+        <div id="completed-tasks" class="tasks"></div>
+      </section>
+    </main>
+
+    <div id="version-badge" class="version-badge"></div>
+    <script src="static/script.js"></script>
+  </body>
+</html>

@@ -25,6 +25,4 @@
 
 ## Käynnistys
 
-1. Avaa projektikansio.
-2. Avaa `index.html` selaimessa.
-3. Sovellus toimii heti ilman asennuksia.
+1. Avaa linkki selaimessa: mikovas.github.io/ATT3-projekti/

@@ -132,33 +132,4 @@ python app.py
 }
 ```
 
----
-
-## Vianmääritys
-
-### `ModuleNotFoundError: No module named 'flask'`
-
-Et ole asentanut riippuvuuksia oikeaan ympäristöön.
-
-Ratkaisu:
-
-```bash
-source .venv/bin/activate   # Windows: .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-### Portti 5000 on jo käytössä
-
-Sulje toinen prosessi, joka käyttää porttia 5000, tai muuta porttia `app.py`:ssä.
-
-### `data/tasks.json` puuttuu
-
-Sovellus luo tiedoston automaattisesti käynnistyksen yhteydessä.
-
----
-
-## Huomioita
-
-- Data tallennetaan tiedostoon `data/tasks.json`.
-- Tiedostopohjainen tallennus sopii paikalliseen harjoituskäyttöön.
 - Jos data rikkoutuu, voit palauttaa tiedoston varmuuskopiosta tai alustaa sen tyhjäksi listaksi: `[]`.

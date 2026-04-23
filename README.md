@@ -1,6 +1,5 @@
 # Student Task Prioritization Tool (HTML + JavaScript)
 
-Tämä projekti on toteutettu JavaScript/HTML/CSS-pohjaisena ilman backendiä.
 
 ## Uutta tässä versiossa (v1.3.0)
 

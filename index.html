@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Task Prioritization Tool</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Student Task Prioritization Tool</h1>
+      <p class="value-proposition">
+        See all your study tasks in one place and quickly identify the most urgent
+        ones.
+      </p>
+
+      <section class="card">
+        <h2>Add New Task</h2>
+        <form id="task-form">
+          <div class="grid">
+            <label>
+              Title
+              <input type="text" id="title" required />
+            </label>
+            <label>
+              Course Name
+              <input type="text" id="course" required />
+            </label>
+            <label class="full-width">
+              Description
+              <textarea id="description" rows="3" required></textarea>
+            </label>
+            <label>
+              Deadline
+              <input type="date" id="deadline" required />
+            </label>
+            <label>
+              Priority
+              <select id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit">Add Task</button>
+        </form>
+        <p id="form-message" class="message" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2>Task List</h2>
+        <div id="tasks" class="tasks"></div>
+      </section>
+    </main>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>

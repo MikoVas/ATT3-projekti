@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a1",
+    "title": "Math assignment chapter 5",
+    "description": "Solve exercises 1-20 and review formulas.",
+    "course": "Mathematics",
+    "deadline": "2026-04-25",
+    "priority": "high",
+    "completed": false,
+    "created_at": "2026-04-20T10:00:00Z"
+  },
+  {
+    "id": "a2",
+    "title": "History reading summary",
+    "description": "Write a one-page summary about World War I causes.",
+    "course": "History",
+    "deadline": "2026-04-29",
+    "priority": "medium",
+    "completed": false,
+    "created_at": "2026-04-21T12:30:00Z"
+  },
+  {
+    "id": "a3",
+    "title": "Prepare chemistry lab notes",
+    "description": "Complete lab template before Thursday class.",
+    "course": "Chemistry",
+    "deadline": "2026-04-24",
+    "priority": "high",
+    "completed": true,
+    "created_at": "2026-04-19T09:15:00Z"
+  }
+]

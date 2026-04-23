@@ -1,0 +1,168 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.value-proposition {
+  margin-bottom: 1rem;
+  color: #505b66;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  padding: 0.55rem;
+}
+
+button {
+  margin-top: 0.8rem;
+  border: none;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.message {
+  min-height: 1.2rem;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.task {
+  border: 1px solid #d1d5db;
+  border-left: 6px solid #6b7280;
+  border-radius: 6px;
+  padding: 0.8rem;
+  background: #fcfcfd;
+}
+
+.task.priority-high {
+  border-left-color: #dc2626;
+}
+
+.task.priority-medium {
+  border-left-color: #d97706;
+}
+
+.task.priority-low {
+  border-left-color: #059669;
+}
+
+.task.urgent {
+  background: #fff3cd;
+}
+
+.task.completed {
+  opacity: 0.7;
+}
+
+.task.completed .task-title {
+  text-decoration: line-through;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge.urgent {
+  background: #dc2626;
+  color: white;
+}
+
+.badge.completed {
+  background: #1f2937;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.actions button {
+  margin-top: 0;
+}
+
+.actions .delete {
+  background: #b91c1c;
+}
+
+.actions .delete:hover {
+  background: #991b1b;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

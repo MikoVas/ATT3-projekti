@@ -28,21 +28,3 @@
 1. Avaa projektikansio.
 2. Avaa `index.html` selaimessa.
 3. Sovellus toimii heti ilman asennuksia.
-
-## Tallennus
-
-- Tehtävät: `student_task_prioritizer_tasks_v1`
-- Kielivalinta: `student_task_prioritizer_lang`
-
-## Projektirakenne
-
-```text
-student-task-prioritizer/
-├─ index.html
-├─ README.md
-├─ data/
-│  └─ tasks.json
-└─ static/
-   ├─ script.js
-   └─ style.css
-```

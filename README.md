@@ -1,4 +1,4 @@
-# Student Task Prioritization Tool (HTML + JavaScript)
+# Student Task Prioritization Tool
 
 
 ## Uutta tässä versiossa (v1.3.0)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,52 +7,73 @@
     <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>Student Task Prioritization Tool</h1>
-      <p class="value-proposition">
-        See all your study tasks in one place and quickly identify the most urgent
-        ones.
-      </p>
+    <button id="language-toggle" class="language-toggle" type="button">EN</button>
 
-      <section class="card">
-        <h2>Add New Task</h2>
+    <main class="container">
+      <h1 id="app-title">Student Task Prioritization Tool</h1>
+      <p id="value-proposition" class="value-proposition"></p>
+
+      <section class="card colorful-card">
+        <h2 id="add-task-title"></h2>
         <form id="task-form">
           <div class="grid">
             <label>
-              Title
+              <span id="label-title"></span>
               <input type="text" id="title" required />
             </label>
             <label>
-              Course Name
+              <span id="label-course"></span>
               <input type="text" id="course" required />
             </label>
             <label class="full-width">
-              Description
+              <span id="label-description"></span>
               <textarea id="description" rows="3" required></textarea>
             </label>
             <label>
-              Deadline
+              <span id="label-deadline"></span>
               <input type="date" id="deadline" required />
             </label>
             <label>
-              Priority
+              <span id="label-priority"></span>
               <select id="priority" required>
-                <option value="low">Low</option>
-                <option value="medium" selected>Medium</option>
-                <option value="high">High</option>
+                <option value="low" id="opt-low"></option>
+                <option value="medium" id="opt-medium" selected></option>
+                <option value="high" id="opt-high"></option>
               </select>
             </label>
           </div>
-          <button type="submit">Add Task</button>
+          <button type="submit" id="add-task-button"></button>
         </form>
         <p id="form-message" class="message" aria-live="polite"></p>
       </section>
 
+      <section class="card stats-card">
+        <h2 id="stats-title"></h2>
+        <div id="stats" class="stats-grid"></div>
+        <div class="charts-grid">
+          <article class="mini-chart-card">
+            <h3 id="priority-distribution-title"></h3>
+            <div id="priority-chart"></div>
+          </article>
+          <article class="mini-chart-card">
+            <h3 id="status-split-title"></h3>
+            <div id="status-chart"></div>
+          </article>
+        </div>
+      </section>
+
       <section class="card">
-        <h2>Task List</h2>
-        <div id="tasks" class="tasks"></div>
+        <h2 id="active-tasks-title"></h2>
+        <div id="active-tasks" class="tasks"></div>
+      </section>
+
+      <section class="card completed-section">
+        <h2 id="completed-tasks-title"></h2>
+        <div id="completed-tasks" class="tasks"></div>
       </section>
     </main>
+
+    <div id="version-badge" class="version-badge"></div>
 
     <script src="static/script.js"></script>
   </body>

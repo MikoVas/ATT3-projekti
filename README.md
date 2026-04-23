@@ -1,40 +1,24 @@
 # Student Task Prioritization Tool (HTML + JavaScript)
 
-Tämä projekti on toteutettu JavaScript/HTML/CSS-pohjaisena ilman backendiä.
+Tämä projekti on nyt toteutettu **kokonaan JavaScript/HTML/CSS-pohjaisena** ilman Pythonia tai Flaskia.
 
-## Uutta tässä versiossa
+## Arvolupaus
 
-- Sivun oikeassa reunassa on kielenvaihtonappi (FI/EN).
-- Sovelluksessa näkyy versionumero oikeassa alakulmassa.
-- Värikkäämpi käyttöliittymä (gradient-tausta, värilliset kortit, prioriteettivärit).
-- Tilastonäkymä (Total, Active, Completed, Urgent, Overdue).
-- Kaksi minigrafiikkaa:
-  - Priority Distribution
-  - Status Split
-- Valmiit tehtävät siirretty erilliseen osioon: **Completed Tasks (Archive)**.
+Sovelluksen arvolupaus on tarjota opiskelijalle selkeä ja helppokäyttöinen työkalu opiskelutehtävien hallintaan.
+
+Käyttäjä pystyy näkemään kaikki tehtävänsä yhdessä näkymässä sekä tunnistamaan nopeasti, mitkä tehtävät ovat kiireisimpiä. Sovellus auttaa priorisoimaan tehtäviä deadlinen ja tärkeyden perusteella.
+
+Keskeinen arvo käyttäjälle on parempi ajanhallinta sekä vähentynyt riski unohtaa tehtäviä.
 
 ## Ominaisuudet
 
 - Lisää uusi tehtävä (title, description, course, deadline, priority)
-- Näytä aktiiviset tehtävät omassa listassaan
-- Näytä valmiit tehtävät erillisessä arkistossa
+- Näytä kaikki tehtävät listassa
 - Automaattinen lajittelu deadlinen ja prioriteetin mukaan
 - Merkitse tehtävä valmiiksi
 - Poista tehtävä
 - Korosta kiireelliset tehtävät (deadline 0–3 päivän sisällä)
-- Tallenna data selaimen `localStorage`:en
-
-## Käynnistys
-
-1. Avaa projektikansio.
-2. Avaa `index.html` selaimessa.
-3. Sovellus toimii heti ilman asennuksia.
-
-## Tallennus
-
-- Tehtävät tallennetaan selaimen `localStorage`:en avaimella `student_task_prioritizer_tasks_v1`.
-- Kielivalinta tallennetaan avaimella `student_task_prioritizer_lang`.
-- Jos tallennus on tyhjä, sovellus luo aloitusdatan automaattisesti.
+- Tallennus selaimen `localStorage`:en
 
 ## Projektirakenne
 
@@ -48,3 +32,18 @@ student-task-prioritizer/
    ├─ script.js
    └─ style.css
 ```
+
+## Käynnistysohjeet (kokonaisuutena)
+
+1. Avaa projektikansio.
+2. Tuplaklikkaa `index.html` **tai** avaa se selaimessa.
+3. Sovellus on heti käytettävissä.
+
+## Tallennus
+
+- Tehtävät tallennetaan selaimen `localStorage`:en avaimella `student_task_prioritizer_tasks_v1`.
+- Jos localStorage on tyhjä, sovellus lisää automaattisesti esimerkkitehtäviä ensimmäisellä käynnistyskerralla.
+
+## Huomio
+
+Tiedosto `data/tasks.json` on mukana esimerkkidatana, mutta varsinainen käyttöversio tallentaa tehtävät selaimen localStorageen.

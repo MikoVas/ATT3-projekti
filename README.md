@@ -25,4 +25,4 @@
 
 ## Käynnistys
 
-1. Avaa linkki selaimessa: mikovas.github.io/ATT3-projekti/
+1. Kopio linkki selaimeen: mikovas.github.io/ATT3-projekti/
